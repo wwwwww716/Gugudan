@@ -1,14 +1,20 @@
+import java.util.Scanner;
+
 public class Gugudan {
     public static void main(String[] args) {
 
-        int i = 1;
-        while (i<10) {
-            System.out.println(6 * i );
-            i++;
-        }
+    System.out.println("구구단 중 출력할 단은?");
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    System.out.println("Number : " + n + "단");
 
-        for (int j=1; j<10; j++) {
-            System.out.println(7 * j);
+    if (2 <= n && n <= 9) {
+        for (int i = 1; i<10; i++) {
+            System.out.println(n * i);
         }
+    }  else {
+        System.out.println("2이상 9이하의 값만 입력할 수 있습니다.");
+    }
+
     }
 }
