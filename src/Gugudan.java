@@ -1,36 +1,14 @@
-import java.util.Scanner;
-
 public class Gugudan {
     public static void main(String[] args) {
 
-        System.out.println("구구단 중 출력할 단은? :");
+        int i = 1;
+        while (i<10) {
+            System.out.println(6 * i );
+            i++;
+        }
 
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        System.out.println("Number : " + n + "단");
-
-        int result = n * 1;
-        System.out.println(result);
-        result = n * 2;
-        System.out.println(result);
-        result = n * 3;
-        System.out.println(result);
-        result = n * 4;
-        System.out.println(result);
-        result = n * 5;
-        System.out.println(result);
-        result = n * 6;
-        System.out.println(result);
-        result = n * 7;
-        System.out.println(result);
-        result = n * 8;
-        System.out.println(result);
-        result = n * 9;
-        System.out.println(result);
-
-
-
-
+        for (int j=1; j<10; j++) {
+            System.out.println(7 * j);
+        }
     }
 }
